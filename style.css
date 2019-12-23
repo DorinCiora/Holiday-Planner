@@ -3,20 +3,22 @@
     background-color:#34b830;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    margin-right: 5px;
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links ul li {
-    display: inline;
-    margin-right: 5px;
+li {
+    float: left;
 }
 
-.nav-links ul {
-    
-    margin-right: 5px;
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 h1 {
@@ -25,6 +27,7 @@ h1 {
 
 .banner {
     display: flex;
+    padding: 5px 250px;
 }
 
 .card {
@@ -45,8 +48,8 @@ h1 {
     padding: 5px;
 }
 
-img {
+.card img {
     padding: 5px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
