@@ -1,0 +1,60 @@
+.nav-bar {
+    display: flex;
+    background-color:#34b830;
+}
+
+.nav-menu {
+    margin: auto;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    padding: 5px 250px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #e1e3e2;
+    height: 400px;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #b8ebb7;
+}
+
+.card-description {
+    margin-top: 80px;
+    text-align: center;
+    padding: 5px;
+}
+
+.card img {
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+}
