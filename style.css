@@ -1,4 +1,28 @@
 .nav-bar {
     display: flex;
-    background-color: lightgreen;
+    background-color: #57ad6e;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.nav-links ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.nav-links ul {
+    
+    margin-right: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.banner {
+    display: flex;
 }
