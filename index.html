@@ -9,36 +9,31 @@
 <body>
     <div class="nav-bar">
         <img src="./picture/Logo.png" alt="brand-logo" width="80px" height="auto">
-        <div class="nav-menu">
-        <nav class="nav-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Find tours</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <a href="#">Home</a>
+            <a href="#">Find tours</a>
+            <a href="#contact">Contact</a>
         </div>
-        </div>
+        <div class="content">
         <h1>Holiday Planner</h1>
         <div class="banner">
             <div class="card">
-                <img src="./picture/image1.png" alt="logo">
-                <p><strong>Subhead 1</strong></p>
-                <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque aspernatur ex temporibus.</p>
+                <img src="./picture/image1.png" alt="logo"><br>
+                <strong>Subhead 1</strong>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque aspernatur ex temporibus.</p>
             </div>
             <div class="card">
-                <img src="./picture/image2.png" alt="logo">
-                <p><strong>Subhead 2</strong></p>
-                <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque aspernatur ex temporibus.</p>
+                <img src="./picture/image2.png" alt="logo"><br>
+                <strong>Subhead 2</strong>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque aspernatur ex temporibus.</p>
             </div>
             <div class="card">
-                <img src="./picture/image 3.png" alt="logo">
-                <p><strong>Subhead 3</strong></p>
-                <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque aspernatur ex temporibus.</p>
+                <img src="./picture/image 3.png" alt="logo"><br>
+                <strong>Subhead 3</strong>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque aspernatur ex temporibus.</p>
             </div>
         </div>
     <div class="section">
-        <p><strong>SECOND SUBSECTION</strong></p>
+        <strong>SECOND SUBSECTION</strong>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi nesciunt quibusdam nulla soluta. Totam, eligendi, nemo impedit eum repellat, ratione possimus debitis odit in sequi dicta aspernatur ab placeat!</p>
     </div>
     <div class="subsection2">
@@ -48,18 +43,21 @@
     <div class="contact">
         <div class="contact-form">
             <form>
-                Email<input type="text" name="Email" id="email" style="background:url(email.svg) no-repeat"><br>
+                Email<input type="text" name="Email" id="email" style="background: url(./picture/email.svg) no-repeat "><br>
                 Message<br><textarea></textarea><br>
                 Gender
-                <input type="radio" name="gender" value="male" checked>Male
-                <input type="radio" name="gender" value="female">Female<br>
-                <input type="checkbox" name="checked" value="subscribe">Subscribe to newsletters <img src="email.svg" alt="email icon"><br>
-                <input type="submit" value="Submit">
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br>
+                <input type="checkbox" name="checked" value="subscribe" checked>Subscribe to newsletters <img src="./picture/email2.svg" alt="email icon"><br>
+                <input type="submit" value="Submit" style="background: url(./picture/plus.svg) no-repeat">
             </form>
         </div>
         <div class="google-maps">
             Google Maps
         </div>
+    </div>
     </div>
 </body>
 </html>
