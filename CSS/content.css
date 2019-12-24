@@ -1,0 +1,42 @@
+.content_banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+.banner_card {
+    background-color: #93c45e;
+    height: 400px;
+    width: 350px;
+    text-align: center;
+}
+
+.banner_card:hover {
+    background-color: #abdd75;
+}
+
+
+.banner_card img {
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.section {
+    height: 100px;
+    display: flex;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_form {
+    padding: 20px 20px;
+    border: 1px solid black;
+}
+
+.googleMaps {
+    border: 1px solid black;
+}
