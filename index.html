@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holliday Planner</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
 </head>
 <body>
     <header>
-    <div class="navbar">
-        <img src="./picture/Logo.png" alt="brand-logo" width="80" height="auto">
+        <nav class="nav_links">
             <a href="#">Home</a>
             <a href="#">Find tours</a>
             <a href="#contact">Contact</a>
-        </div>
+        </nav>
     </header>
         <div class="content">
         <h1>Holiday Planner</h1>
@@ -34,12 +34,14 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque aspernatur ex temporibus.</p>
             </div>
         </div>
-        <strong>SECOND SUBSECTION</strong>
+        &#x25B7;<strong>SECOND SUBSECTION</strong>
+        <div class="section">
         <div class="section_text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi nesciunt quibusdam nulla soluta. Totam, eligendi, nemo impedit eum repellat, ratione possimus debitis odit in sequi dicta aspernatur ab placeat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi nesciunt quibusdam nulla soluta. Totam, eligendi, nemo impedit eum repellat, ratione possimus debitis odit in sequi dicta <span>aspernatur ab</span> placeat!<img src="./picture/copyright.svg" alt="copyright symbol"></p>
+        </div>
         <div class="section_text_truncate">
-        <p class="text_truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur veritatis blanditiis nisi doloremque quis iste repellat! Enim quam nobis itaque perferendis dolorem similique porro, rem saepe reiciendis. Quaerat, molestias sequi.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellendus nostrum delectus fugit? Quas, sit rerum, quasi, quos provident fugit commodi minima ipsam consequatur consequuntur natus? Error tempora odio ipsa?
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi mollitia sunt doloribus totam culpa nesciunt maxime, reprehenderit optio dolorem nisi provident velit vitae veniam inventore autem at odio odit esse?</p>
+        <p id="ellipsis" class="text_truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur veritatis blanditiis nisi doloremque quis iste repellat! Enim quam nobis itaque perferendis dolorem similique porro, rem saepe reiciendis. Quaerat, molestias sequi.
         </p>
     </div>
     </div>

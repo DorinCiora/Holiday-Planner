@@ -1,19 +1,33 @@
-.navbar {
+header {
     display: flex;
-    margin: auto;
+    justify-content: center;
+    // margin: auto;
     background-color: #699a33;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
-    a {
-        flex: 1 0 auto;
-        text-align: center;
-        color: black;
-        display: flex;
-        justify-content: space-around;
-        flex-flow: column-reverse;
-        text-decoration: none;
+    .nav_links {
+        align-self: center;
+    // a {
+    //     flex: 1 0 auto;
+    //     text-align: center;
+    //     color: black;
+    //     display: flex;
+    //     justify-content: space-around;
+    //     flex-flow: column-reverse;
+    //     text-decoration: none;
 
     &:hover {
         background-color: #5a7140;
     }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar {
+      margin: auto;
+      width: 100%;
     }
 }

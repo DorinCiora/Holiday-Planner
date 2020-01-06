@@ -23,31 +23,45 @@
     height: 150px;
 }
 
-.section_text {
+.section {
     height: 100px;
-    display: flex;
-}
-
-.section_text_truncate p {
-    width: 550px;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-    .text_truncate {
-        text-overflow: ellipsis;
-    }
-
-.contact {
     display: flex;
     justify-content: space-between;
 }
 
-.contact_form {
-    padding: 20px 20px;
-    border: 1px solid black;
+span {
+    color: red;
 }
 
-.googleMaps {
-    border: 1px solid black;
+.section p {
+    padding: 5px 5px;
 }
+
+.section_text_truncate #ellipsis {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .text_truncate {
+    text-overflow: ellipsis;
+  }
+
+  @media screen and  (max-width: 768px) {
+    .content_banner {
+        display: block;
+        padding: 10px 0px;
+        width: auto;
+    }
+
+    .banner_card {
+        margin-bottom: 10px;
+        width: auto;
+    }
+
+    .section {
+        display: block;
+        height: auto;
+    }
+}
+
+
