@@ -1,16 +1,23 @@
+@banner_color: #93c45e;
+@hover_color: #abdd75;
+
+#title {
+    padding-top: 50px;
+}
+
 .content_banner {
     cursor: pointer;
     display: flex;
 }
 
 .banner_card {
-    background-color: #93c45e;
+    background-color: @banner_color;
     height: 400px;
     text-align: center;
     margin: 0 5px;
 
     &:hover {
-        background-color: #abdd75;
+        background-color: @hover_color;
     }
 }
 
@@ -21,7 +28,6 @@
 }
 
 .section {
-    // height: 100px;
     display: flex;
     justify-content: space-between;
 }
