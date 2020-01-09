@@ -6,11 +6,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
-    },
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -32,6 +28,10 @@ module.exports = {
                 ],
             },
             {
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            },
+            {
                 test: /\.(png|jpe?g|gif|svg)$/,
                 use: [
                     {
@@ -47,7 +47,6 @@ module.exports = {
             { from: './src/picture', to: 'picture'}
         ]),
         new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin(),
     ],
     devServer: {
         contentBase: './dist'

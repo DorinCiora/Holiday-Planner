@@ -1,31 +1,51 @@
 {
-  "name": "Holiday-Planner",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
-  "main": "index.js",
-  "dependencies": {
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
-  },
-  "devDependencies": {
-    "html-webpack-plugin": "^3.2.0",
-    "webpack-dev-server": "^3.10.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "dev": "webpack-dev-server --open"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DorinCiora/Holiday-Planner.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DorinCiora/Holiday-Planner/issues"
-  },
-  "homepage": "https://github.com/DorinCiora/Holiday-Planner#readme"
+    "name": "Holiday-Planner",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "main": "index.js",
+    "dependencies": {
+        "extract-loader": "^3.1.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.7.3",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^5.1.1",
+        "css-loader": "^3.4.1",
+        "file-loader": "^5.0.2",
+        "html-webpack-plugin": "^3.2.0",
+        "image-webpack-loader": "^6.0.0",
+        "install": "^0.13.0",
+        "less": "^3.10.3",
+        "less-loader": "^5.0.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "npm": "^6.13.4",
+        "postcss-loader": "^3.0.0",
+        "prettier": "1.19.1",
+        "style-loader": "^1.1.2",
+        "stylelint-config-standard": "^19.0.0",
+        "svg-inline-loader": "^0.8.0",
+        "url-loader": "^3.0.0",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.10.1",
+        "webpack-merge": "^4.2.2"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack  --watch",
+        "dev": "webpack-dev-server --open",
+        "format": "prettier --write '**/*.{js,css,md}'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DorinCiora/Holiday-Planner.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/DorinCiora/Holiday-Planner/issues"
+    },
+    "homepage": "https://github.com/DorinCiora/Holiday-Planner#readme"
 }

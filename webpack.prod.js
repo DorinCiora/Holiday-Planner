@@ -1,11 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -47,7 +46,6 @@ module.exports = {
             { from: './src/picture', to: 'picture'}
         ]),
         new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin(),
     ],
     devServer: {
         contentBase: './dist'
