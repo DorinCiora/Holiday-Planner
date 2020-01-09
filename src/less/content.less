@@ -1,25 +1,22 @@
 .content_banner {
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
-    padding: 5px 0px;
 }
 
 .banner_card {
     background-color: #93c45e;
     height: 400px;
-    width: 350px;
     text-align: center;
+    margin: 0 5px;
 
     &:hover {
-    background-color: #abdd75;
-}
+        background-color: #abdd75;
+    }
 }
 
- 
 .banner_card img {
     padding: 5px;
-    width: 150px;
+    width: 150 px;
     height: 150px;
 }
 
@@ -37,19 +34,16 @@ span {
     padding: 5px 5px;
 }
 
-.section_text_truncate #ellipsis {
-    width: 300px;
+#ellipsis {
+    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-  }
-  .text_truncate {
-    text-overflow: ellipsis;
-  }
+}
 
-  @media screen and  (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .content_banner {
         display: block;
-        padding: 10px 0px;
+        padding: 10px 0 px;
         width: auto;
     }
 
@@ -63,5 +57,3 @@ span {
         height: auto;
     }
 }
-
-

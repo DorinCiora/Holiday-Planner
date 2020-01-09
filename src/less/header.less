@@ -1,20 +1,32 @@
 header {
     display: flex;
-    justify-content: center;
     background-color: #699a33;
     height: 60px;
     position: fixed;
     top: 0;
     width: 100%;
 
+    img {
+        width: 60px;
+        height: auto;
+    }
+
     .nav_links {
         align-self: center;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+
+        a {
+            padding: 5px 15px;
+            background-color: darkgray;
+        }
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .navbar {
-      margin: auto;
-      width: 100%;
+        margin: auto;
+        width: 100%;
     }
 }
