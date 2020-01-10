@@ -1,64 +1,65 @@
-@banner_color: #93c45e;
-@hover_color: #abdd75;
-
-#title {
+.title {
     padding-top: 50px;
 }
 
-.content_banner {
+.content-banner {
     cursor: pointer;
     display: flex;
 }
 
-.banner_card {
+.content-banner__card {
     background-color: @banner_color;
     height: 400px;
     text-align: center;
     margin: 0 5px;
+
+    img {
+        padding: 5px;
+        width: 150 px;
+        height: 150px;
+    }
 
     &:hover {
         background-color: @hover_color;
     }
 }
 
-.banner_card img {
-    padding: 5px;
-    width: 150 px;
-    height: 150px;
+.block-elem {
+    display: block;
 }
 
-.section {
+.content-section {
     display: flex;
     justify-content: space-between;
+
+    p {
+        padding: 5px;
+    }
 }
 
 span {
-    color: red;
+    color: @span-color;
 }
 
-.section p {
-    padding: 5px 5px;
-}
-
-#ellipsis {
+.content-section--ellipsis {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
-    .content_banner {
+    .content-banner {
         display: block;
         padding: 10px 0 px;
         width: auto;
     }
 
-    .banner_card {
+    .content-banner__card {
         margin-bottom: 10px;
         width: auto;
     }
 
-    .section {
+    .content-section {
         display: block;
         height: auto;
     }

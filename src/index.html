@@ -6,38 +6,38 @@
         <title>Holliday Planner</title>
     </head>
     <body>
-        <header>
+        <header class="header">
             <img src="./picture/logo.png" alt="logo" />
-            <nav class="nav_links">
+            <nav class="header__nav-menu">
                 <a href="#">Home</a>
                 <a href="#">Find tours</a>
                 <a href="#contact">Contact</a>
             </nav>
         </header>
-        <h1 id="title">Holiday Planner</h1>
+        <h1 class="title">Holiday Planner</h1>
         <div class="content">
-            <div class="content_banner">
-                <div class="banner_card">
-                    <img src="./picture/image1.png" alt="logo" /><br />
-                    <strong>Subhead 1</strong>
+            <div class="content-banner">
+                <div class="content-banner__card">
+                    <img src="./picture/image1.png" alt="logo" />
+                    <strong class="block-elem">Subhead 1</strong>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
                         quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque
                         aspernatur ex temporibus.
                     </p>
                 </div>
-                <div id="middle_banner" class="banner_card">
-                    <img src="./picture/image2.png" alt="logo" /><br />
-                    <strong>Subhead 2</strong>
+                <div class="content-banner__card">
+                    <img src="./picture/image2.png" alt="logo" />
+                    <strong class="block-elem">Subhead 2</strong>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
                         quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque
                         aspernatur ex temporibus.
                     </p>
                 </div>
-                <div class="banner_card">
-                    <img src="./picture/image3.png" alt="logo" /><br />
-                    <strong>Subhead 3</strong>
+                <div class="content-banner__card">
+                    <img src="./picture/image3.png" alt="logo" />
+                    <strong class="block-elem">Subhead 3</strong>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
                         quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque
@@ -46,24 +46,25 @@
                 </div>
             </div>
             &#x25B7;<strong>SECOND SUBSECTION</strong>
-            <div class="section">
+            <div class="content-section">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi nesciunt quibusdam nulla
                         soluta. Totam, eligendi, nemo impedit eum repellat, ratione possimus debitis odit in sequi dicta
                         <span>aspernatur ab</span> placeat!<img src="./picture/copyright.svg" alt="copyright symbol" />
                     </p>
-                    <p id="ellipsis">
+                    <p class="content-section--ellipsis">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur veritatis blanditiis nisi
                         doloremque quis iste repellat! Enim quam nobis itaque perferendis dolorem similique porro, rem
                         saepe reiciendis. Quaerat, molestias sequi. 
                     </p>
                 </div>
             <h2 id="contact">Contact</h2>
-            <div class="contact"> 
-                <div class="contact_form">
+            <div class="content-contact"> 
+                <div class="content-contact__form">
                     <form>
-                        Email<input type="text" name="Email" id="email" placeholder="Your email" /><br />
-                        Message<br /><textarea placeholder="Write your text here..."></textarea><br />
+                        Email<input type="text" name="Email" placeholder="Your email" />
+                        <p>Message</p>
+                        <textarea placeholder="Write your text here..."></textarea><br />
                         Gender
                         <input type="radio" name="gender" id="male" value="male" checked />
                         <label for="male">Male</label>
@@ -71,11 +72,11 @@
                         <label for="female">Female</label><br />
                         <input type="checkbox" id="subscribe" name="checked" value="subscribe" checked />
                         <label for="subscribe">Subscribe to newsletters</label>
-                        <img id="mail_icon2" src="./picture/email2.svg" alt="email icon" /><br />
+                        <img src="./picture/email2.svg" alt="email icon" />
                         <input type="submit" value="Submit" />
                     </form>
                 </div>
-                <div class="googleMaps">
+                <div class="content-contact__google-maps">
                     Google Maps
                 </div>
             </div>
