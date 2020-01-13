@@ -3,44 +3,86 @@
     justify-content: space-between;
 }
 
-.content-contact__form {
-    position: relative;
-    width: 550px;
-    height: 250px;
+.form {
+    border: 1px solid black;
+    padding: 25px;
+    flex-grow: 1;
+}
 
-    input[type='text'] {
-        width: 80%;
-        padding-left: 26px;
-        border: 0;
-        outline: 0;
-        border-bottom: 1px solid black;
-        background: url('../picture/email.svg') no-repeat;
-    }
+.email-section {
+    display: flex;
+    align-items: baseline;
+}
 
-    textarea {
-        width: 90%;
-        height: 100px;
-    }
+.email {
+    margin-right: 5px;
+}
 
-    input[type='submit'] {
-        cursor: pointer;
-        width: 90%;
-        border-radius: 10px;
-        border-style: ridge;
-        background: url('../picture/plus.svg');
-        background-repeat: no-repeat;
-        background-position: left;
-    }
+.email__input {
+    flex-grow: 1;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    // background: url('../picture/email.svg') no-repeat;
+}
+
+.message {
+    margin-bottom: 0;
+}
+
+.message-section {
+    display: flex;
+}
+
+.text-area {
+    flex: auto;
+    height: 100px;
+    resize: vertical;
+}
+
+.gender-section {
+    display: flex;
+    align-items: center;
+}
+
+.gender {
+    margin-right: 10px;
+}
+
+.subscribe-section {
+    display: flex;
+}
+
+.subscribe-icon {
+    margin: 0 10px;
+}
+
+.submit-btn {
+    display: block;
+    border-radius: 12px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: 1px solid rgb(131, 119, 119);
+}
+
+input[type='submit'] {
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: ridge;
+    background: url('../picture/plus.svg');
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .content-contact__google-maps {
-    width: 550px;
-    height: 300px;
+    height: 250px;
     border: 1px solid black;
+    flex-grow: 1;
 }
 
 @media screen and (max-width: 768px) {
-    .content-contact__form {
+    .form {
         width: auto;
         padding: 5px 5px;
     }

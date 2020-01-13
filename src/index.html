@@ -18,8 +18,8 @@
         <div class="content">
             <div class="content-banner">
                 <div class="content-banner__card">
-                    <img src="./picture/image1.png" alt="logo" />
-                    <strong class="block-elem">Subhead 1</strong>
+                    <img src="./picture/image1.png" alt="bus icon" />
+                    <p class="subhead">Subhead 1</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
                         quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque
@@ -27,8 +27,8 @@
                     </p>
                 </div>
                 <div class="content-banner__card">
-                    <img src="./picture/image2.png" alt="logo" />
-                    <strong class="block-elem">Subhead 2</strong>
+                    <img src="./picture/image2.png" alt="beach in the summer" />
+                    <p class="subhead">Subhead 2</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
                         quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque
@@ -36,8 +36,8 @@
                     </p>
                 </div>
                 <div class="content-banner__card">
-                    <img src="./picture/image3.png" alt="logo" />
-                    <strong class="block-elem">Subhead 3</strong>
+                    <img src="./picture/image3.png" alt="palm trees" />
+                    <p class="subhead">Subhead 3</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
                         quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque
@@ -45,7 +45,7 @@
                     </p>
                 </div>
             </div>
-            &#x25B7;<strong>SECOND SUBSECTION</strong>
+            <p class="arrow-sign">&#62;</p><p class="second-subsection">SECOND SUBSECTION</p>
             <div class="content-section">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi nesciunt quibusdam nulla
@@ -59,23 +59,32 @@
                     </p>
                 </div>
             <h2 id="contact">Contact</h2>
-            <div class="content-contact"> 
-                <div class="content-contact__form">
-                    <form>
-                        Email<input type="text" name="Email" placeholder="Your email" />
-                        <p>Message</p>
-                        <textarea placeholder="Write your text here..."></textarea><br />
-                        Gender
+            <div class="content-contact">
+                    <form class="form">
+                        <div class="email-section">
+                        <p class="email">Email</p>
+                        <input class="email__input" type="text" name="Email" placeholder="Your email" />
+                        </div>
+                        <p class="message">Message</p>
+                        <div class="message-section">
+                        <textarea class="text-area" placeholder="Write your text here..."></textarea>
+                        </div>
+                        <div class="gender-section">
+                        <p class="gender">Gender</p>
+                        <div class="gender-option">
                         <input type="radio" name="gender" id="male" value="male" checked />
                         <label for="male">Male</label>
                         <input type="radio" name="gender" id="female" value="female" />
-                        <label for="female">Female</label><br />
+                        <label for="female">Female</label>
+                        </div>
+                        </div>
+                        <div class="subscribe-section">
                         <input type="checkbox" id="subscribe" name="checked" value="subscribe" checked />
                         <label for="subscribe">Subscribe to newsletters</label>
-                        <img src="./picture/email2.svg" alt="email icon" />
-                        <input type="submit" value="Submit" />
+                        <img class="subscribe-icon" src="./picture/email2.svg" alt="email icon" />
+                        </div>
+                        <button class="submit-btn" type="submit" value="Submit">Submit</button>
                     </form>
-                </div>
                 <div class="content-contact__google-maps">
                     Google Maps
                 </div>
