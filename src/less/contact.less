@@ -1,6 +1,7 @@
+@mail: data-uri('../picture/email.svg');
+
 .content-contact {
     display: flex;
-    justify-content: space-between;
 }
 
 .form {
@@ -23,7 +24,8 @@
     border: 0;
     outline: 0;
     border-bottom: 1px solid black;
-    // background: url('../picture/email.svg') no-repeat;
+    padding-left: 20px;
+    .u-svg-fill('../picture/email.svg', @light-blue);
 }
 
 .message {
@@ -36,7 +38,8 @@
 
 .text-area {
     flex: auto;
-    height: 100px;
+    min-height: 100px;
+    max-height: 150px;
     resize: vertical;
 }
 
@@ -53,11 +56,13 @@
     display: flex;
 }
 
-.subscribe-icon {
-    margin: 0 10px;
+.subscribe-section__icon {
+    width: 35px;
+    height: 20px;
+    .u-svg-fill('../picture/email.svg', @aqua-blue);
 }
 
-.submit-btn {
+.submit-area {
     display: block;
     border-radius: 12px;
     width: 100%;
@@ -66,13 +71,17 @@
     border: 1px solid rgb(131, 119, 119);
 }
 
-input[type='submit'] {
-    cursor: pointer;
-    border-radius: 10px;
-    border-style: ridge;
-    background: url('../picture/plus.svg');
-    background-repeat: no-repeat;
-    background-position: left;
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button__icon {
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    .u-svg-fill('../picture/plus.svg', @aqua-blue);
 }
 
 .content-contact__google-maps {
@@ -81,17 +90,24 @@ input[type='submit'] {
     flex-grow: 1;
 }
 
+.google-maps-menu {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.google-maps__direction {
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 15px;
+}
+
 @media screen and (max-width: 768px) {
     .form {
-        width: auto;
         padding: 5px 5px;
     }
 
-    .content-contact__google-maps {
-        width: auto;
-    }
-
     .content-contact {
-        display: block;
+        flex-direction: column;
     }
 }

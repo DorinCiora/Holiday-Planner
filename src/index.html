@@ -7,18 +7,18 @@
     </head>
     <body>
         <header class="header">
-            <img src="./picture/logo.png" alt="logo" />
+            <img class="header__logo" src="./picture/logo.png" alt="logo" />
             <nav class="header__nav-menu">
-                <a href="#">Home</a>
-                <a href="#">Find tours</a>
-                <a href="#contact">Contact</a>
+                <a class="header__nav-menu__links" href="#">Home</a>
+                <a class="header__nav-menu__links" href="#">Find tours</a>
+                <a class="header__nav-menu__links" href="#contact">Contact</a> 
             </nav>
         </header>
-        <h1 class="title">Holiday Planner</h1>
+        <h1 class="main-title">Holiday Planner</h1>
         <div class="content">
             <div class="content-banner">
                 <div class="content-banner__card">
-                    <img src="./picture/image1.png" alt="bus icon" />
+                    <img class="card__image" src="./picture/image1.png" alt="bus icon" />
                     <p class="subhead">Subhead 1</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
@@ -27,7 +27,7 @@
                     </p>
                 </div>
                 <div class="content-banner__card">
-                    <img src="./picture/image2.png" alt="beach in the summer" />
+                    <img class="card__image" src="./picture/image2.png" alt="beach in the summer" />
                     <p class="subhead">Subhead 2</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
@@ -36,7 +36,7 @@
                     </p>
                 </div>
                 <div class="content-banner__card">
-                    <img src="./picture/image3.png" alt="palm trees" />
+                    <img class="card__image" src="./picture/image3.png" alt="palm trees" />
                     <p class="subhead">Subhead 3</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
@@ -47,10 +47,10 @@
             </div>
             <p class="arrow-sign">&#62;</p><p class="second-subsection">SECOND SUBSECTION</p>
             <div class="content-section">
-                    <p>
+                    <p class="content-section__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi nesciunt quibusdam nulla
                         soluta. Totam, eligendi, nemo impedit eum repellat, ratione possimus debitis odit in sequi dicta
-                        <span>aspernatur ab</span> placeat!<img src="./picture/copyright.svg" alt="copyright symbol" />
+                        <span class="span-red">aspernatur ab</span> placeat! <span class="copyright-icon">&#169;</span>
                     </p>
                     <p class="content-section--ellipsis">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur veritatis blanditiis nisi
@@ -62,8 +62,9 @@
             <div class="content-contact">
                     <form class="form">
                         <div class="email-section">
-                        <p class="email">Email</p>
-                        <input class="email__input" type="text" name="Email" placeholder="Your email" />
+                        <label for="email">Email</label>
+                        <p id="email" class="email"></p>
+                        <input class="email__input svg-fill" type="text" name="Email" placeholder="Your email" />
                         </div>
                         <p class="message">Message</p>
                         <div class="message-section">
@@ -81,12 +82,20 @@
                         <div class="subscribe-section">
                         <input type="checkbox" id="subscribe" name="checked" value="subscribe" checked />
                         <label for="subscribe">Subscribe to newsletters</label>
-                        <img class="subscribe-icon" src="./picture/email2.svg" alt="email icon" />
+                        <div class="subscribe-section__icon"></div>
                         </div>
-                        <button class="submit-btn" type="submit" value="Submit">Submit</button>
+                        <button class="submit-area" type="submit" value="Submit">
+                            <div class="submit-button">
+                                <div class="submit-button__icon"></div>
+                                <p>Submit</p>
+                            </div>
+                        </button>
                     </form>
                 <div class="content-contact__google-maps">
-                    Google Maps
+                    <div class="google-maps-menu">
+                    <p><span>&#60;</span>MAP<span>&#62;</span></p>
+                    <button class="google-maps__direction">Direction</button>
+                    </div>
                 </div>
             </div>
         </div>

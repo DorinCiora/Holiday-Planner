@@ -42,6 +42,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({ template: './src/index.html' }),
+        new HtmlWebpackPlugin({ template: './src/tour-finder.html.html' }),
         new CopyWebpackPlugin([{ from: './src/picture', to: 'picture' }]),
         new CleanWebpackPlugin()
     ],

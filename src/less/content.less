@@ -1,27 +1,32 @@
-.title {
-    padding-top: 50px;
+.main-title {
+    padding-top: 70px;
+    font-size: 50px;
 }
 
 .content-banner {
-    cursor: pointer;
     display: flex;
 }
 
 .content-banner__card {
-    background-color: @banner_color;
-    height: 400px;
+    background-color: @light-grey;
+    height: 600px;
     text-align: center;
-    margin: 0 5px;
-
-    img {
-        padding: 5px;
-        width: 150 px;
-        height: 150px;
-    }
 
     &:hover {
-        background-color: @hover_color;
+        background-color: @dark-grey;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .content-banner__card:nth-child(2) {
+        margin: 0 10px;
+    }
+}
+
+.card__image {
+    padding-top: 50px;
+    width: 150 px;
+    height: 150px;
 }
 
 .subhead {
@@ -32,10 +37,15 @@
 .content-section {
     display: flex;
     justify-content: space-between;
+}
 
-    p {
-        margin-top: 0;
-    }
+.content-section__text {
+    margin-top: 0;
+}
+
+.copyright-icon {
+    color: red;
+    font-size: 25px;
 }
 
 .arrow-sign {
@@ -47,11 +57,12 @@
     display: inline;
 }
 
-span {
-    color: @span-color;
+.span-red {
+    color: @span-red;
 }
 
 .content-section--ellipsis {
+    margin-top: 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -59,18 +70,20 @@ span {
 
 @media screen and (max-width: 768px) {
     .content-banner {
-        display: block;
+        flex-direction: column;
         padding: 10px 0 px;
-        width: auto;
     }
 
     .content-banner__card {
         margin-bottom: 10px;
-        width: auto;
     }
 
     .content-section {
-        display: block;
-        height: auto;
+        flex-direction: column;
+    }
+
+    .main-title {
+        padding-top: 70px;
+        font-size: 40px;
     }
 }
