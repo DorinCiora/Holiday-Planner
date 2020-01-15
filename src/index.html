@@ -4,14 +4,15 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Holliday Planner</title>
+        <script defer src="./Modules/Components/Tour/Tour.js"></script>
     </head>
     <body>
         <header class="header">
             <img class="header__logo" src="./picture/logo.png" alt="logo" />
             <nav class="header__nav-menu">
-                <a class="header__nav-menu__links" href="#">Home</a>
-                <a class="header__nav-menu__links" href="#">Find tours</a>
-                <a class="header__nav-menu__links" href="#contact">Contact</a> 
+                <a class="header__nav-menu__links" href="./index.html">Home</a>
+                <a class="header__nav-menu__links" href="./tour-finder.html">Find tours</a>
+                <a class="header__nav-menu__links" href="#contact">Contact</a>
             </nav>
         </header>
         <h1 class="main-title">Holiday Planner</h1>
@@ -45,60 +46,60 @@
                     </p>
                 </div>
             </div>
-            <p class="arrow-sign">&#62;</p><p class="second-subsection">SECOND SUBSECTION</p>
+            <p class="arrow-sign">&#62;</p>
+            <p class="second-subsection">SECOND SUBSECTION</p>
             <div class="content-section">
-                    <p class="content-section__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi nesciunt quibusdam nulla
-                        soluta. Totam, eligendi, nemo impedit eum repellat, ratione possimus debitis odit in sequi dicta
-                        <span class="span-red">aspernatur ab</span> placeat! <span class="copyright-icon">&#169;</span>
-                    </p>
-                    <p class="content-section__text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur veritatis blanditiis nisi
-                        doloremque quis iste repellat! Enim quam nobis itaque perferendis dolorem similique porro, rem
-                        saepe reiciendis. Quaerat, molestias sequi.
-                    </p>
-                </div>
+                <p class="content-section__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi nesciunt quibusdam nulla
+                    soluta. Totam, eligendi, nemo impedit eum repellat, ratione possimus debitis odit in sequi dicta
+                    <span class="span-red">aspernatur ab</span> placeat! <span class="copyright-icon">&#169;</span>
+                </p>
+                <p class="content-section__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur veritatis blanditiis nisi
+                    doloremque quis iste repellat! Enim quam nobis itaque perferendis dolorem similique porro, rem saepe
+                    reiciendis. Quaerat, molestias sequi.
+                </p>
+            </div>
             <h2 id="contact" class="second-title">Contact</h2>
             <div class="contact">
-                    <form class="form">
-                        <div class="form-email-section">
+                <form class="form">
+                    <div class="form-email-section">
                         <label for="email">Email</label>
                         <p id="email" class="form-email-section__title"></p>
                         <input class="title__email-input" type="text" name="Email" placeholder="Your email" />
-                        </div>
-                        <p class="form-message-title">Message</p>
-                        <div class="form-message-title-section">
+                    </div>
+                    <p class="form-message-title">Message</p>
+                    <div class="form-message-title-section">
                         <textarea class="title-section__text-area" placeholder="Write your text here..."></textarea>
-                        </div>
-                        <div class="form-gender-section">
+                    </div>
+                    <div class="form-gender-section">
                         <p class="form-gender-section__title">Gender</p>
                         <div class="gender-option">
-                        <input type="radio" name="gender" id="male" value="male" checked />
-                        <label for="male">Male</label>
-                        <input type="radio" name="gender" id="female" value="female" />
-                        <label for="female">Female</label>
+                            <input type="radio" name="gender" id="male" value="male" checked />
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female" value="female" />
+                            <label for="female">Female</label>
                         </div>
-                        </div>
-                        <div class="subscribe-section">
+                    </div>
+                    <div class="subscribe-section">
                         <input type="checkbox" id="subscribe" name="checked" value="subscribe" checked />
                         <label for="subscribe">Subscribe to newsletters</label>
                         <div class="subscribe-section__icon"></div>
-                        </div>
-                        <div class="submit-area">
+                    </div>
+                    <div class="submit-area">
                         <button class="submit-area-button" type="submit" value="Submit">
-                                <div class="submit-area-button__icon"></div>
-                                <p>Submit</p>
+                            <div class="submit-area-button__icon"></div>
+                            <p>Submit</p>
                         </button>
-                        </div>
-                    </form>
+                    </div>
+                </form>
                 <div class="content-contact__google-maps">
                     <div class="google-maps-menu">
-                    <p><span>&#60;</span>MAP<span>&#62;</span></p>
-                    <button class="google-maps__direction">Direction</button>
+                        <p><span>&#60;</span>MAP<span>&#62;</span></p>
+                        <button class="google-maps__direction" onclick="getLocation()">Direction</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </body>
 </html>

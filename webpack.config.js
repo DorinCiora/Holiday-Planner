@@ -37,12 +37,27 @@ module.exports = {
                         loader: 'file-loader'
                     }
                 ]
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({ template: './src/index.html' }),
+        new HtmlWebpackPlugin({
+            filename: 'tour-finder.html',
+            template: './src/tour-finder.html'
+        }),
         new CopyWebpackPlugin([{ from: './src/picture', to: 'picture' }]),
+        new CopyWebpackPlugin([{ from: './src/Modules', to: 'Modules' }]),
         new CleanWebpackPlugin()
     ],
     devServer: {
