@@ -1,25 +1,24 @@
-@mail: data-uri('../picture/email.svg');
-
-.content-contact {
+.contact {
     display: flex;
+    justify-content: space-between;
 }
 
 .form {
     border: 1px solid black;
     padding: 25px;
-    flex-grow: 1;
+    flex-basis: 45%;
 }
 
-.email-section {
+.form-email-section {
     display: flex;
     align-items: baseline;
 }
 
-.email {
+.form-email-section__title {
     margin-right: 5px;
 }
 
-.email__input {
+.title__email-input {
     flex-grow: 1;
     border: 0;
     outline: 0;
@@ -28,27 +27,27 @@
     .u-svg-fill('../picture/email.svg', @light-blue);
 }
 
-.message {
+.form-message-title {
     margin-bottom: 0;
 }
 
-.message-section {
+.form-message-title-section {
     display: flex;
 }
 
-.text-area {
+.title-section__text-area {
     flex: auto;
     min-height: 100px;
     max-height: 150px;
     resize: vertical;
 }
 
-.gender-section {
+.form-gender-section {
     display: flex;
     align-items: center;
 }
 
-.gender {
+.form-gender-section__title {
     margin-right: 10px;
 }
 
@@ -63,31 +62,31 @@
 }
 
 .submit-area {
-    display: block;
+    display: flex;
+}
+
+.submit-area-button {
+    display: flex;
     border-radius: 12px;
-    width: 100%;
     padding: 10px 0;
     background-color: transparent;
-    border: 1px solid rgb(131, 119, 119);
-}
-
-.submit-button {
-    display: flex;
-    justify-content: center;
+    border: 1px solid #837777;
     align-items: center;
+    flex-grow: 1;
+    justify-content: center;
 }
 
-.submit-button__icon {
+.submit-area-button__icon {
     margin: 0 5px;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
     .u-svg-fill('../picture/plus.svg', @aqua-blue);
 }
 
 .content-contact__google-maps {
-    height: 250px;
     border: 1px solid black;
-    flex-grow: 1;
+    flex-basis: 45%;
 }
 
 .google-maps-menu {
@@ -107,7 +106,7 @@
         padding: 5px 5px;
     }
 
-    .content-contact {
+    .contact {
         flex-direction: column;
     }
 }
