@@ -1,0 +1,7 @@
+.u-svg-fill(@src, @fill) {
+    background-repeat: no-repeat;
+    @base-uri: data-uri('image/svg+xml;charset=UTF-8', @src);
+    @backgroundSVG1: replace('@{base-uri}', escape('<g>'), escape('<g fill="@{fill}">'), 'g');
+
+    background-image: e(@backgroundSVG1);
+}
