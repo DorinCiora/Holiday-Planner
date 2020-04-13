@@ -56,8 +56,11 @@ module.exports = {
             filename: 'tour-finder.html',
             template: './src/tour-finder.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'tour-details.html',
+            template: './src/tour-details.html'
+        }),
         new CopyWebpackPlugin([{ from: './src/picture', to: 'picture' }]),
-        new CopyWebpackPlugin([{ from: './src/Modules', to: 'Modules' }]),
         new CleanWebpackPlugin()
     ],
     devServer: {

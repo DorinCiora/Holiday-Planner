@@ -1,16 +1,17 @@
-.main-title {
+.app-title {
     padding-top: 70px;
     font-size: 50px;
 }
 
-.content-banner {
+.card-wrapper {
     display: flex;
 }
 
-.content-banner__card {
+.card-tour {
     background-color: @light-grey;
     height: 600px;
     text-align: center;
+    flex: 1 1 0;
 
     &:hover {
         background-color: @dark-grey;
@@ -18,28 +19,28 @@
 }
 
 @media screen and (min-width: @breaking-point) {
-    .content-banner__card:nth-child(2) {
+    .card-tour:nth-child(2) {
         margin: 0 10px;
     }
 }
 
-.card__image {
+.card-tour__image {
     padding-top: 50px;
     width: 150 px;
     height: 150px;
 }
 
-.subhead {
+.app__second-title {
     display: block;
     font-weight: bold;
 }
 
-.content-section {
+.main-content__subsection-text {
     display: flex;
     justify-content: space-between;
 }
 
-.content-section__text {
+.subsection-text {
     margin-top: 0;
     flex-basis: 45%;
 }
@@ -54,11 +55,11 @@
     display: inline-block;
 }
 
-.second-subsection {
+.main-content__subsection-title {
     display: inline;
 }
 
-.span-red {
+.text-red {
     color: @span-red;
 }
 
@@ -70,17 +71,17 @@
     flex-basis: 45%;
 }
 
-.second-title {
+.app-second-title {
     font-size: 30px;
 }
 
 @media screen and (max-width: @breaking-point) {
-    .content-banner {
+    .card-wrapper {
         flex-direction: column;
         padding: 10px 0 px;
     }
 
-    .content-banner__card {
+    .card-tour {
         margin-bottom: 10px;
     }
 
@@ -88,7 +89,7 @@
         flex-direction: column;
     }
 
-    .main-title {
+    .app-title {
         padding-top: 70px;
         font-size: 40px;
     }

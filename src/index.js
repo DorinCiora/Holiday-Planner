@@ -1,4 +1,3 @@
 import styles from '../src/styles.less';
-import App from './Modules/App.module';
-
-console.log('Buna Dorin!');
+import tourFinder from '../src/js/tourFinder';
+import tourDetails from '../src/js/tourDetails';
