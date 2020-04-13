@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    background-color: @grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header__logo {
+    width: 70px;
+    height: auto;
+    border: 3px solid @grey;
+}
+
+.header__nav-menu {
+    align-self: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header__nav-menu__links {
+    padding: 3px 30px;
+    background-color: @nav-white;
+    border: 1px solid @grey;
+    border-width: thin;
+    font-size: 20px;
+    font-style: italic;
+}
+
+@media screen and (max-width: @breaking-point) {
+    .header__nav-menu__links {
+        background-color: @nav-white;
+        border: 1px solid @grey;
+        border-width: thin;
+        font-size: 10px;
+        font-style: italic;
+        padding: 3px 20px;
+    }
+}

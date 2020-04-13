@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Holliday Planner</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header class="header">
+            <img class="header__logo" src="./picture/logo.png" alt="logo" />
+            <nav class="header__nav-menu">
+                <a class="header__nav-menu__links" href="./index.html">Home</a>
+                <a class="header__nav-menu__links" href="./tour-finder.html">Find tours</a>
+                <a class="header__nav-menu__links" href="#contact">Contact</a>
+            </nav>
+        </header>
+        <h1 class="app-title">Holiday Planner</h1>
+        <div class="main-content">
+            <div class="card-wrapper">
+                <div class="card-tour">
+                    <img class="card-tour__image" src="./picture/image1.png" alt="bus icon" />
+                    <p class="card-tour__title">Subhead 1</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
+                        quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque
+                        aspernatur ex temporibus.
+                    </p>
+                </div>
+                <div class="card-tour">
+                    <img class="card-tour__image" src="./picture/image2.png" alt="beach in the summer" />
+                    <p class="card-tour__title">Subhead 2</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
+                        quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque
+                        aspernatur ex temporibus.
+                    </p>
+                </div>
+                <div class="card-tour">
+                    <img class="card-tour__image" src="./picture/image3.png" alt="palm trees" />
+                    <p class="card-tour__title">Subhead 3</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptates deserunt cumque
+                        quos, officiis sequi, iure in et totam minus animi aut unde numquam autem exercitationem itaque
+                        aspernatur ex temporibus.
+                    </p>
+                </div>
+            </div>
+            <p class="arrow-sign">&#62;</p>
+            <p class="main-content__subsection-title">SECOND SUBSECTION</p>
+            <div class="main-content__subsection-text">
+                <p class="subsection-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi nesciunt quibusdam nulla
+                    soluta. Totam, eligendi, nemo impedit eum repellat, ratione possimus debitis odit in sequi dicta
+                    <span class="text-red">aspernatur ab</span> placeat! <span class="copyright-icon">&#169;</span>
+                </p>
+                <p class="subsection-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur veritatis blanditiis nisi
+                    doloremque quis iste repellat! Enim quam nobis itaque perferendis dolorem similique porro, rem saepe
+                    reiciendis. Quaerat, molestias sequi.
+                </p>
+            </div>
+            <h2 id="contact" class="app-second-title">Contact</h2>
+            <div class="contact">
+                <form class="form">
+                    <div class="form-email-section">
+                        <label for="email">Email</label>
+                        <p id="email" class="form-email-section__title"></p>
+                        <input class="title__email-input" type="text" name="Email" placeholder="Your email" />
+                    </div>
+                    <p class="form-message-title">Message</p>
+                    <div class="form-message-title-section">
+                        <textarea class="title-section__text-area" placeholder="Write your text here..."></textarea>
+                    </div>
+                    <div class="form-gender-section">
+                        <p class="form-gender-section__title">Gender</p>
+                        <div class="gender-option">
+                            <input type="radio" name="gender" id="male" value="male" checked />
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female" value="female" />
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="subscribe-section">
+                        <input type="checkbox" id="subscribe" name="checked" value="subscribe" checked />
+                        <label for="subscribe">Subscribe to newsletters</label>
+                        <div class="subscribe-section__icon"></div>
+                    </div>
+                    <div class="submit-area">
+                        <button class="submit-area-button" type="submit" value="Submit">
+                            <div class="submit-area-button__icon"></div>
+                            <p>Submit</p>
+                        </button>
+                    </div>
+                </form>
+                <div class="content-contact__google-maps">
+                    <div class="google-maps-menu">
+                        <p><span>&#60;</span>MAP<span>&#62;</span></p>
+                        <button class="google-maps__direction" onclick="getLocation()">Direction</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

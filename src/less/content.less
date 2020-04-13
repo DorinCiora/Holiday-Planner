@@ -1,0 +1,96 @@
+.app-title {
+    padding-top: 70px;
+    font-size: 50px;
+}
+
+.card-wrapper {
+    display: flex;
+}
+
+.card-tour {
+    background-color: @light-grey;
+    height: 600px;
+    text-align: center;
+    flex: 1 1 0;
+
+    &:hover {
+        background-color: @dark-grey;
+    }
+}
+
+@media screen and (min-width: @breaking-point) {
+    .card-tour:nth-child(2) {
+        margin: 0 10px;
+    }
+}
+
+.card-tour__image {
+    padding-top: 50px;
+    width: 150 px;
+    height: 150px;
+}
+
+.app__second-title {
+    display: block;
+    font-weight: bold;
+}
+
+.main-content__subsection-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subsection-text {
+    margin-top: 0;
+    flex-basis: 45%;
+}
+
+.copyright-icon {
+    color: red;
+    font-size: 25px;
+}
+
+.arrow-sign {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.main-content__subsection-title {
+    display: inline;
+}
+
+.text-red {
+    color: @span-red;
+}
+
+.content-section--ellipsis {
+    margin-top: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-basis: 45%;
+}
+
+.app-second-title {
+    font-size: 30px;
+}
+
+@media screen and (max-width: @breaking-point) {
+    .card-wrapper {
+        flex-direction: column;
+        padding: 10px 0 px;
+    }
+
+    .card-tour {
+        margin-bottom: 10px;
+    }
+
+    .content-section {
+        flex-direction: column;
+    }
+
+    .app-title {
+        padding-top: 70px;
+        font-size: 40px;
+    }
+}
